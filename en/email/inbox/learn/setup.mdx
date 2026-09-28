@@ -25,34 +25,36 @@ language: en
 
 The SuperOffice Inbox is an alternative method for connecting your email account to SuperOffice CRM. It is designed for users who cannot install [SuperOffice for Outlook][9] (Microsoft 365) or [SuperOffice Gmail Link][13] (Google Workspace) on their device.
 
-SuperOffice Inbox supports two ways of connecting your email account:
+SuperOffice Inbox supports several ways of connecting your email account:
 
-* **Microsoft 365, using Microsoft Graph (recommended for Microsoft 365 accounts):** Connect from the [User setup wizard][10] instead of from within the inbox itself. Once connected this way, sending and receiving email, folders, and follow-up invitations and cancellations, all go through Microsoft Graph instead of IMAP/SMTP.
-* **IMAP and SMTP (Gmail, an on-premise Exchange server, or another provider):** Connect manually from within the inbox, as described below.
+* **Microsoft 365, using Microsoft Graph (recommended for Microsoft 365 accounts):** Connect from the [User setup wizard][10], from within the inbox itself, from E-mail options, or from any other place emails can be sent. Once connected, sending and receiving email, folders, and follow-up invitations and cancellations, all go through Microsoft Graph instead of IMAP/SMTP.
+* **IMAP and SMTP (Gmail, an on-premise Exchange server, or another provider):** Connect as described above, alternatively follow the steps below. 
 
 <Note>
-SuperOffice Inbox supports only **one** email account per user. If SuperOffice for Outlook or SuperOffice Gmail Link is installed and connected to your email, the Inbox feature is not available.
+SuperOffice Inbox supports only **one** email account per user.
 </Note>
 
 ## Before you begin
 
-* Check that **SuperOffice CRM** is selected as your [preferred email client][8] in **Local settings**.
+* Check that [Show my e-mail inbox in SuperOffice] is set to yes in **Preferences, E-mail section**.
 
-* Ensure that **IMAP is enabled** in your email client.
+* Ensure that **IMAP (or MS Graph) is enabled** in your email client.
 
 * Confirm that the **email address** you intend to use matches the primary email address registered on your [contact card][1] in SuperOffice.
 
 ## Connect your email account
 
-Use this method for a Gmail account, an on-premise Exchange server, or another IMAP/SMTP provider. If you have a Microsoft 365 account, use the [User setup wizard][10] instead.
+This method can be used for all accounts.
 
 1. Click <i class="ph ph-at" aria-hidden="true"></i> **Inbox** in the navigator.
 
-    The first time you open the inbox, the **Set up email account** dialog appears.
+    The first time you open the inbox, the **Connect your email** message appears.
 
-    ![Set up email account dialog showing email field and Next button -screenshot][img1]
+    ![Connect your email message showing Connect button -screenshot][img1]
 
-1. In the **E-mail account** field, enter the email address you want to use.
+1. Click **Connect**.
+
+1. In the **E-mail address** field, enter the email address you want to use.
 
 1. Click **Next**.
 
@@ -91,23 +93,22 @@ You can disconnect your current email account and optionally update it by reconn
 
 1. Click <i class="ph ph-user-circle" aria-label="Personal settings"></i> in the top bar and select **Email options**.
 
-1. Go to the **E-mail account** tab.
+1. See the blue banner in top.
 
-    ![Email account tab with Edit/remove button -screenshot][img6]
+    ![Email options dialog with blue banner and Sign out link -screenshot][img6]
 
-1. Click **Edit/remove** to disconnect the current email account.
+1. Click **Sign out** to disconnect the current email account.
 
-    * This opens the same setup dialog used when first connecting your email account.
-    * To remove the connection, simply close the dialog.
-    * To reconnect, enter a new email address and follow the setup steps.
+    * This changes the blue banner to red with a Connect link.
+    * To reconnect, click the Connect link and follow the setup steps.
 
 <Note>
-Removing the email account does **not** delete your actual email account (for example, your Gmail or Outlook account). It only disconnects it from SuperOffice.
+Signing out from the email account here disconnects it from SuperOffice.
 </Note>
 
 ## Troubleshooting tips
 
-* The SuperOffice Inbox does not support **POP3** email accounts. Only IMAP is supported.
+* The SuperOffice Inbox does not support **POP3** email accounts. Only MS Graph and IMAP is supported.
 
 * If your inbox is not updating, your email provider may be blocking the connection.
   * Check your email account for a message about a blocked or unauthorized login attempt.
